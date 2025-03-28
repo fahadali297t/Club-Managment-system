@@ -1,0 +1,61 @@
+.address_card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 20px;
+  margin: 20px;
+}
+.address_card:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+.address_card h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.address_card p {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.address_card a {
+  color: #007bff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.address_card a:hover {
+  text-decoration: none;
+}
+
+.top h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.top p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.form-control:focus {
+  border: none;
+}
+.form-control:active {
+  border: none;
+}
+.btn_container button:hover {
+  cursor: pointer;
+  color: white;
+}

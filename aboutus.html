@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container-xxl navbar navbar-expand-lg custom-navbar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Left: Logo -->
+        <a class="navbar-brand" href="#">ZarVaan Club</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center: Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-center" id="nav">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center mx-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sponsors.html">Sponsers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact Us</a>
+              </li>
+            </ul>
+            <!-- end Button -->
+            <div class="d-flex gap-3">
+              <a class="btn custom-btn" href="./register.html" role="button">
+                <i class="fa-solid fa-user-plus"></i>&nbsp; &nbsp; Register
+              </a>
+              <a class="btn custom-btn" href="./login.html" role="button">
+                Login&nbsp; &nbsp; <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="mt-5 container-fluid page_header d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="text-center" style="font-weight: 700">About Us</h1>
+      <p class="page_navigation">
+        Home <i class="fa-solid fa-angles-right"></i> About Us
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <!-- Top Contact Bar -->
+      <div class="footer-top-bar py-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="me-4">
+                <i class="bi bi-geo-alt me-2"></i>
+                4648 Rocky Road Philadelphia PA, 1920
+              </div>
+              <div class="me-4">
+                <i class="bi bi-envelope me-2"></i>
+                Info@example.com
+              </div>
+              <div>
+                <i class="bi bi-telephone me-2"></i>
+                +88 0123 654 99
+              </div>
+            </div>
+            <div class="col-md-4 text-end">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="footer-main py-5">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-3">
+              <h2 class="mb-3">ZarVaan Club</h2>
+              <p class="text-muted">
+                Phasellus ultricies aliquam volutpat ullamcorper lacerat reque,
+                lacinia curabitur lacinia mollis.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+              <h5 class="mb-3">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Our Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Our Blogs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">FAQ's</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="col-md-3">
+              <h5 class="mb-3">Recent Posts</h5>
+              <div class="mb-3 d-flex align-items-center">
+                <img
+                  src="https://via.placeholder.com/60"
+                  alt="Post"
+                  class="recent-post-img me-3"
+                />
+                <div>
+                  <small>May 12, 2025</small>
+                  <p class="mb-0 small text-muted">
+                    There are many vario ns of passages of
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://via.placeholder.com/60"
+                  alt="Post"
+                  class="recent-post-img me-3"
+                />
+                <div>
+                  <small>May 12, 2025</small>
+                  <p class="mb-0 small text-muted">
+                    There are many vario ns of passages of
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-3">
+              <h5 class="mb-3">Contact Us</h5>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="privacyCheck"
+                  />
+                  <label class="form-check-label" for="privacyCheck"
+                    >I agree with the Privacy Policy</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-warning w-100">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom py-3">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>&copy; 2025 Chartics. All rights reserved.</div>
+          <div>
+            <a href="#" class="text-white text-decoration-none me-3"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="text-white text-decoration-none"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Js links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0e26b3244d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

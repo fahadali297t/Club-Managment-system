@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-color: #eb5310;
+  --secondary-color: #1e252f;
+  --font-family: "Manrope", sans-serif;
+  --font-size: 1rem;
+  --line-height: 1.5;
+  --padding: 10px;
+  --margin: 10px;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  margin: var(--margin) 0;
+  font-weight: normal;
+}
+
+p {
+  margin: var(--margin) 0;
+  color: white;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/* Custom classes */
+.custom-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.custom-btn:hover {
+  background: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+}
+.custom-btn:active {
+  background: #ff5722;
+}
+.page_navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Nav bar */
+.custom-navbar {
+  background: transparent;
+  color: white;
+}
+#nav li a {
+  color: white;
+}
+#nav li a:hover {
+  color: var(--primary-color);
+}
+.navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 90vh;
+}
+.left {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+  flex-direction: column;
+}
+.left h1 {
+  font-weight: 800;
+}
+.left p {
+  color: white;
+}
+.right {
+  width: 50%;
+  height: 50%;
+  border-radius: 20px 0 0 20px;
+  background-color: #eb5310;
+}
+/* Numbers Section */
+.number_container {
+  /* margin-top: 50px; */
+  flex-wrap: wrap;
+}
+.custom-round-cards {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--secondary-color);
+  transition: border 0.3s, background-color 0.3s;
+}
+.custom-round-cards:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+.about-us .right {
+  border-radius: 0 20px 20px 0;
+}
+/* Upcoming Events */
+.eventscard {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: 250px;
+  max-height: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.eventscard:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.eventscard_img {
+  border-radius: 20px;
+}
+.eventscard p {
+  color: rgba(255, 255, 255, 0.4);
+}
+.eventscard h3 {
+  font-weight: 700;
+}
+.events_top h1 {
+  font-weight: 800;
+}
+.eventscard_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.eventscard .date {
+  background-color: var(--secondary-color);
+  top: 20px;
+  left: 20px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  height: 70px;
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: white;
+  position: absolute;
+}
+
+.eventscard .date p {
+  color: var(--primary-color);
+}
+
+/* ===============team section============= */
+.teamCard {
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  width: 300px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.teamCard:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.teamCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+}
+.teamCard_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 20px 20px;
+  display: none;
+}
+.teamCard:hover .teamCard_content {
+  display: block;
+}
+.teamCard_content h3 {
+  color: white;
+  font-weight: 700;
+}
+.teamCard_content p {
+  color: white;
+}
+/* ==========Review============ */
+.review {
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  width: 400px;
+  padding: 20px;
+}
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.review .lowerContent p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+/* =================Footer=============== */
+.footer-top-bar {
+  background-color: #ff6600;
+  color: white;
+}
+.footer-main {
+  background-color: #2c3e50;
+  color: white;
+}
+.footer-bottom {
+  background-color: #1c2833;
+  color: white;
+}
+.recent-post-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* register Page */
+
+@media screen and (max-width: 991px) {
+  #nav {
+    height: 90vh;
+    /* background-color: #ff5722; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #nav .custom-btn {
+    margin-top: 50px;
+  }
+  .eventsContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .eventsContent .eventscard {
+    width: 100%;
+  }
+  .signright {
+    display: none;
+  }
+  .signleft_content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .number_container {
+    margin-top: 50px;
+  }
+  .about-us {
+    margin-top: 50px;
+  }
+  .events_top {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .events_top {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
