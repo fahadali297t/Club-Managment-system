@@ -277,22 +277,23 @@ a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
 /* =================Footer=============== */
-.footer-top-bar {
-  background-color: #ff6600;
-  color: white;
-}
+
 .footer-main {
-  background-color: #2c3e50;
+  background-color: var(--primary-color);
   color: white;
 }
 .footer-bottom {
-  background-color: #1c2833;
+  background-color: var(--secondary-color);
   color: white;
 }
-.recent-post-img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+footer .custom-btn {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+}
+footer .custom-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 /* register Page */
@@ -321,6 +322,10 @@ a:hover {
   }
   .signleft_content {
     padding: 0;
+  }
+  .end_btn {
+    flex-direction: column;
+    gap: -20px;
   }
 }
 @media screen and (max-width: 768px) {
