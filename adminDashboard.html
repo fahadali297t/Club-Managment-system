@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Management Admin Dashboard</title>
+    <!-- Material Design CSS -->
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --mdc-theme-primary: #6200ee;
+        --mdc-theme-secondary: #03dac6;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .admin-dashboard {
+        display: flex;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: white;
+        height: 100vh;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar-header {
+        padding: 20px;
+        background-color: var(--mdc-theme-primary);
+        color: white;
+        text-align: center;
+      }
+
+      .sidebar-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-menu-item {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .sidebar-menu-item:hover {
+        background-color: #f0f0f0;
+      }
+
+      .sidebar-menu-item i {
+        margin-right: 15px;
+        color: var(--mdc-theme-primary);
+      }
+
+      .main-content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+
+      .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .dashboard-card {
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .dashboard-card-icon {
+        font-size: 48px;
+        color: var(--mdc-theme-primary);
+        margin-bottom: 10px;
+      }
+
+      .dashboard-card-title {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .dashboard-card-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--mdc-theme-primary);
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .data-table th,
+      .data-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      .data-table th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+    </style>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="admin-dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h2>Club Management</h2>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item">
+            <i class="material-icons">dashboard</i>
+            Dashboard
+          </li>
+          <li class="sidebar-menu-item">
+            <i class="material-icons">people</i>
+            Members
+          </li>
+          <li class="sidebar-menu-item">
+            <i class="material-icons">event</i>
+            Events
+          </li>
+          <li class="sidebar-menu-item">
+            <i class="material-icons">payments</i>
+            Finance
+          </li>
+          <li class="sidebar-menu-item">
+            <i class="material-icons">settings</i>
+            Settings
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <h1>Dashboard Overview</h1>
+
+        <!-- Dashboard Statistics Grid -->
+        <div class="dashboard-grid">
+          <div class="dashboard-card">
+            <i class="material-icons dashboard-card-icon">people</i>
+            <div class="dashboard-card-title">Total Members</div>
+            <div class="dashboard-card-value">245</div>
+          </div>
+          <div class="dashboard-card">
+            <i class="material-icons dashboard-card-icon">event</i>
+            <div class="dashboard-card-title">Upcoming Events</div>
+            <div class="dashboard-card-value">12</div>
+          </div>
+          <div class="dashboard-card">
+            <i class="material-icons dashboard-card-icon">payments</i>
+            <div class="dashboard-card-title">Pending Payments</div>
+            <div class="dashboard-card-value">$4,500</div>
+          </div>
+          <div class="dashboard-card">
+            <i class="material-icons dashboard-card-icon">notifications</i>
+            <div class="dashboard-card-title">New Registrations</div>
+            <div class="dashboard-card-value">18</div>
+          </div>
+        </div>
+
+        <!-- Recent Members Table -->
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Member ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Join Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>John Doe</td>
+              <td>john.doe@example.com</td>
+              <td>2023-01-15</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Jane Smith</td>
+              <td>jane.smith@example.com</td>
+              <td>2023-02-20</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Mike Johnson</td>
+              <td>mike.johnson@example.com</td>
+              <td>2023-03-10</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Material Design JavaScript (optional) -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  </body>
+</html>
